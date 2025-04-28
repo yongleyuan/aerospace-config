@@ -20,7 +20,7 @@ default-root-container-layout = 'tiles'
 
 default-root-container-orientation = 'auto'
 
-on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+# on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
 automatically-unhide-macos-hidden-apps = false
 
@@ -87,11 +87,11 @@ alt-k = ['join-with up', 'mode main']
 alt-l = ['join-with right', 'mode main']
 
 [workspace-to-monitor-force-assignment]
-Y = ['secondary', 'main']
-U = ['main', 'secondary']
-I = ['main', 'secondary']
-O = ['main', 'secondary']
-P = ['main', 'secondary']
+Y = ['main', 'secondary']
+U = ['secondary', 'main']
+I = ['secondary', 'main']
+O = ['secondary', 'main']
+P = ['secondary', 'main']
 
 [[on-window-detected]]
 if.app-id = 'com.tencent.xinWeChat'

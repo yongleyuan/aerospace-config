@@ -53,17 +53,23 @@ alt-shift-j = 'move down'
 alt-shift-k = 'move up'
 alt-shift-l = 'move right'
 
-alt-y = 'workspace Y'
-alt-u = 'workspace U'
-alt-i = 'workspace I'
-alt-o = 'workspace O'
-alt-p = 'workspace P'
+alt-y = 'workspace 1'
+alt-u = 'workspace 2'
+alt-i = 'workspace 3'
+alt-o = 'workspace 4'
+alt-p = 'workspace 5'
 
-alt-shift-y = 'move-node-to-workspace Y --focus-follows-window'
-alt-shift-u = 'move-node-to-workspace U --focus-follows-window'
-alt-shift-i = 'move-node-to-workspace I --focus-follows-window'
-alt-shift-o = 'move-node-to-workspace O --focus-follows-window'
-alt-shift-p = 'move-node-to-workspace P --focus-follows-window'
+alt-shift-y = 'move-node-to-workspace 1'
+alt-shift-u = 'move-node-to-workspace 2'
+alt-shift-i = 'move-node-to-workspace 3'
+alt-shift-o = 'move-node-to-workspace 4'
+alt-shift-p = 'move-node-to-workspace 5'
+
+alt-shift-ctrl-y = 'move-node-to-workspace 1 --focus-follows-window'
+alt-shift-ctrl-u = 'move-node-to-workspace 2 --focus-follows-window'
+alt-shift-ctrl-i = 'move-node-to-workspace 3 --focus-follows-window'
+alt-shift-ctrl-o = 'move-node-to-workspace 4 --focus-follows-window'
+alt-shift-ctrl-p = 'move-node-to-workspace 5 --focus-follows-window'
 
 alt-f = 'layout floating tiling'
 alt-shift-f = 'macos-native-fullscreen'
@@ -73,7 +79,8 @@ alt-r = 'flatten-workspace-tree'
 alt-enter = 'balance-sizes'
 
 alt-tab = 'workspace-back-and-forth'
-alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
+alt-leftSquareBracket = 'workspace --wrap-around prev'
+alt-rightSquareBracket = 'workspace --wrap-around next'
 
 alt-backtick = 'mode service'
 
@@ -87,23 +94,23 @@ alt-k = ['join-with up', 'mode main']
 alt-l = ['join-with right', 'mode main']
 
 [workspace-to-monitor-force-assignment]
-Y = ['main', 'secondary']
-U = ['secondary', 'main']
-I = ['secondary', 'main']
-O = ['secondary', 'main']
-P = ['secondary', 'main']
+1 = ['main', 'secondary']
+2 = ['secondary', 'main']
+3 = ['secondary', 'main']
+4 = ['secondary', 'main']
+5 = ['secondary', 'main']
 
 [[on-window-detected]]
 if.app-id = 'com.tencent.xinWeChat'
 if.during-aerospace-startup = true
 check-further-callbacks = false
-run = ['layout tiling', 'move-node-to-workspace O']
+run = ['layout tiling', 'move-node-to-workspace 4']
 
 [[on-window-detected]]
 if.app-id = 'com.readdle.SparkDesktop'
 if.during-aerospace-startup = true
 check-further-callbacks = false
-run = ['layout tiling', 'move-node-to-workspace O']
+run = ['layout tiling', 'move-node-to-workspace 4']
 
 [[on-window-detected]]
 check-further-callbacks = true

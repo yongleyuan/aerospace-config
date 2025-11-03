@@ -105,11 +105,11 @@ if.during-aerospace-startup = true
 check-further-callbacks = false
 run = ['layout tiling', 'move-node-to-workspace 4']
 
-[[on-window-detected]]
-if.app-id = 'com.readdle.SparkDesktop'
-if.during-aerospace-startup = true
-check-further-callbacks = false
-run = ['layout tiling', 'move-node-to-workspace 4']
+# [[on-window-detected]]
+# if.app-id = 'com.readdle.SparkDesktop'
+# if.during-aerospace-startup = true
+# check-further-callbacks = false
+# run = ['layout tiling', 'move-node-to-workspace 4']
 
 [[on-window-detected]]
 check-further-callbacks = true

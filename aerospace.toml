@@ -103,7 +103,7 @@ alt-l = ['join-with right', 'mode main']
 if.app-id = 'com.tencent.xinWeChat'
 if.during-aerospace-startup = true
 check-further-callbacks = false
-run = ['layout tiling', 'move-node-to-workspace 4']
+run = ['move-node-to-workspace 4']
 
 # [[on-window-detected]]
 # if.app-id = 'com.readdle.SparkDesktop'

@@ -113,5 +113,10 @@ run = ['move-node-to-workspace 4']
 
 [[on-window-detected]]
 check-further-callbacks = true
+if.during-aerospace-startup = true
+run = ['move-node-to-workspace 3']
+
+[[on-window-detected]]
+check-further-callbacks = true
 if.during-aerospace-startup = false
 run = ['layout floating']

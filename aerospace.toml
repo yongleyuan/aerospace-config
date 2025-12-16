@@ -84,7 +84,7 @@ alt-rightSquareBracket = 'workspace --wrap-around next'
 alt-backtick = 'mode service'
 
 [mode.service.binding]
-esc = ['reload-config', 'mode main']
+esc = ['reload-config', 'mode main', 'workspace 3']
 backspace = ['close-all-windows-but-current', 'mode main']
 
 alt-h = ['join-with left', 'mode main']
